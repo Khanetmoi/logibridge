@@ -1,0 +1,248 @@
+/* ==============================
+   GLOBAL STYLE
+   ============================== */
+:root {
+  --brand-blue: #004aad;
+  --brand-gold: #ffb703;
+  --text-color: #1e1e1e;
+  --muted-color: #6b7280;
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+  --border-color: rgba(0, 0, 0, 0.08);
+
+  /* Dark mode variables */
+  --dark-bg: #0f172a;
+  --dark-surface: #1e293b;
+  --dark-text: #e2e8f0;
+  --dark-muted: #94a3b8;
+}
+
+[data-theme="dark"] {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .cta-banner {
+  background: var(--dark-surface);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .muted {
+  color: var(--dark-muted);
+}
+
+/* ==============================
+   BASE ELEMENTS
+   ============================== */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background: var(--bg-light);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+h1, h2, h3 {
+  color: var(--brand-blue);
+  margin-bottom: 8px;
+}
+
+h1 {
+  color: var(--brand-gold);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.muted {
+  color: var(--muted-color);
+}
+
+
+.cta {
+  background: var(--brand-blue);
+  color: #fff !important;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.cta:hover {
+  background: #00337a;
+}
+
+.toggle-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.toggle-btn:hover {
+  border-color: var(--brand-blue);
+  color: var(--brand-blue);
+}
+
+/* ==============================
+   MAIN LAYOUT
+   ============================== */
+.services-main {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+/* ==============================
+   SERVICE CARDS
+   ============================== */
+.services-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card-actions {
+  margin-top: 12px;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.25s;
+}
+
+.btn-outline {
+  border: 1px solid var(--brand-blue);
+  color: var(--brand-blue);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--brand-blue);
+  color: #fff;
+}
+
+.btn-primary {
+  background: var(--brand-blue);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #00337a;
+}
+
+/* ==============================
+   SVG FLOW DIAGRAM
+   ============================== */
+.services-flow {
+  margin-top: 48px;
+  display: block;
+}
+
+.services-flow text {
+  font-family: "Inter", sans-serif;
+}
+
+/* ==============================
+   SECTORS SECTION
+   ============================== */
+.secteurs {
+  margin-top: 48px;
+  background: var(--bg-white);
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.secteurs-action {
+  margin-top: 16px;
+}
+
+/* ==============================
+   CTA BANNER
+   ============================== */
+.cta-banner {
+  margin-top: 48px;
+  background: linear-gradient(90deg, var(--brand-blue), #003b91);
+  color: #fff;
+  padding: 28px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.cta-banner strong {
+  font-size: 1.2rem;
+}
+
+.cta-text {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.cta-action {
+  margin-top: 14px;
+}
+
+.cta-banner .btn-primary {
+  background: var(--brand-gold);
+  color: #000;
+  border: none;
+}
+
+.cta-banner .btn-primary:hover {
+  background: #f4a000;
+}
+
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+@media (max-width: 768px) {
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-banner {
+    text-align: left;
+  }
+}

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Services — LogiBridge Africa</title>
+  <meta name="description" content="Sourcing, négociation, contrôle qualité, logistique et livraison — services LogiBridge Africa.">
+  <meta property="og:title" content="Services — LogiBridge Africa">
+  <meta property="og:description" content="Nos services de facilitation d'achats internationaux.">
+  <meta property="og:image" content="https://www.votredomaine.com/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/service.css">
+</head>
+<body data-page="services">
+  <header class="header" role="banner">
+    <div class="header-inner container">
+      <div class="brand">
+        <a href="index.html" class="logo-link">
+          <img src="assets/logos/logo.png" alt="LogiBridge Africa Logo" class="logo-img" />
+        </a>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Main">
+        <a href="index.html" data-i18n="nav_home">Accueil</a>
+        <a href="about.html" data-i18n="nav_about">À propos</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="resources.html" data-i18n="nav_resources">Ressources</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+
+        <a class="cta" href="contact.html#contact" data-i18n="cta_quote">Obtenir un devis</a>
+      </nav>
+
+      <button id="mobileToggle" class="menu-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+    </div>
+
+    <div id="mobileNav" style="display:none;background:var(--navy);padding:12px;">
+      <a href="index.html" style="display:block;color:white;padding:8px 0">Accueil</a>
+      <a href="about.html" style="display:block;color:white;padding:8px 0">À propos</a>
+      <a href="services.html" style="display:block;color:white;padding:8px 0">Services</a>
+      <a href="resources.html" style="display:block;color:white;padding:8px 0">Ressources</a>
+      <a href="contact.html" style="display:block;color:white;padding:8px 0">Contact</a>
+    </div>
+  </header>
+
+  <main class="container services-main">
+    <h1 data-i18n="services_title">Nos services</h1>
+    <p class="muted" data-i18n="services_intro">Nous gérons pour vous tout le processus d’achat international — de la recherche à la livraison finale.</p>
+
+    <div class="services-grid">
+      <div class="card" id="card-sourcing">
+        <h3>Sourcing et validation fournisseurs</h3>
+        <p class="muted">Sélection, vérification et qualification des partenaires les plus fiables.</p>
+        <div class="card-actions">
+          <a class="btn btn-outline" href="contact.html#contact" data-i18n="talk_expert">Demander une étude</a>
+        </div>
+      </div>
+
+      <div class="card" id="card-negociation">
+        <h3>Négociation & optimisation des coûts</h3>
+        <p class="muted">Négociation de conditions commerciales et optimisation du coût total d'achat.</p>
+        <div class="card-actions">
+          <a class="btn btn-outline" href="contact.html#contact" data-i18n="talk_expert">Parler aux ventes</a>
+        </div>
+      </div>
+
+      <div class="card" id="card-controle">
+        <h3>Contrôle qualité & conformité</h3>
+        <p class="muted">Inspections, audits et checklists avant expédition.</p>
+        <div class="card-actions">
+          <a class="btn btn-outline" href="contact.html#contact" data-i18n="talk_expert">Organiser une inspection</a>
+        </div>
+      </div>
+
+      <div class="card" id="card-logistique">
+        <h3>Gestion logistique & livraison</h3>
+        <p class="muted">Coordination du transport, formalités douanières et livraison finale.</p>
+        <div class="card-actions">
+          <a class="btn btn-outline" href="contact.html#contact" data-i18n="talk_expert">Obtenir une proposition</a>
+        </div>
+      </div>
+    </div>
+
+    <svg class="services-flow" width="100%" height="180" viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 100 90 Q 200 30, 300 90 T 500 90 T 700 90" stroke="#007bff" stroke-width="4" fill="none" />
+
+      <circle id="svg-sourcing" cx="100" cy="90" r="20" fill="#007bff" />
+      <text x="100" y="90" text-anchor="middle" dy="5" fill="#fff" font-size="14">🔍</text>
+      <text x="100" y="130" text-anchor="middle" font-size="12">Analyse</text>
+
+      <circle id="svg-negociation" cx="300" cy="90" r="20" fill="#007bff" />
+      <text x="300" y="90" text-anchor="middle" dy="5" fill="#fff" font-size="14">📦</text>
+      <text x="300" y="130" text-anchor="middle" font-size="12">Sourcing</text>
+
+      <circle id="svg-controle" cx="500" cy="90" r="20" fill="#007bff" />
+      <text x="500" y="90" text-anchor="middle" dy="5" fill="#fff" font-size="14">🤝</text>
+      <text x="500" y="130" text-anchor="middle" font-size="12">Négociation</text>
+
+      <circle id="svg-logistique" cx="700" cy="90" r="20" fill="#007bff" />
+      <text x="700" y="90" text-anchor="middle" dy="5" fill="#fff" font-size="14">🚚</text>
+      <text x="700" y="130" text-anchor="middle" font-size="12">Logistique</text>
+
+      <text id="svg-package-icon" x="100" y="90" font-size="20" text-anchor="middle" alignment-baseline="middle">🖱️</text>
+    </svg>
+
+    <section class="secteurs">
+      <h2>Secteurs couverts</h2>
+      <p class="muted">Automobile, Matériel de construction, Informatique & Technologie.</p>
+      <div class="secteurs-action">
+        <a class="btn btn-primary" href="contact.html#contact" data-i18n="cta_quote">Obtenir un devis gratuit</a>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <strong>Besoin d’un accompagnement complet pour vos achats internationaux ?</strong>
+      <div class="cta-text">Notre équipe conçoit une solution sur-mesure et s’occupe de tout.</div>
+      <div class="cta-action">
+        <a class="btn btn-primary" href="contact.html#contact" data-i18n="ready_cta">Demander un devis maintenant</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="inner container">
+      <div>
+        <div class="footer-brand">LOGIBRIDGE AFRICA</div>
+        <small>Facilitation d'achat international</small>
+      </div>
+      <div class="footer-columns">
+        <div>
+          <div class="footer-heading">Entreprise</div>
+          <a href="about.html">À propos</a><br>
+          <a href="resources.html">Ressources</a>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <div>support@logibridgeafrica.com</div>
+          <div class="footer-phone">+1 212-683-9756</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
